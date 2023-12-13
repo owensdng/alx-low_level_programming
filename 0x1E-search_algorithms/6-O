@@ -1,0 +1,1 @@
+The space complexity is O(n*m) because an n x m 2D array is allocated.

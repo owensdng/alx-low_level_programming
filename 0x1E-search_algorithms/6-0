@@ -1,0 +1,20 @@
+#include <stdlib.h>
+
+/**
+ * allocate_map - Allocates a 2D array of integers
+ * @n: Number of rows
+ * @m: Number of columns
+ *
+ * Return: Pointer to the allocated 2D array
+ */
+int **allocate_map(int n, int m)
+{
+    int **map;
+
+    map = malloc(sizeof(int *) * n);
+    for (int i = 0; i < n; i++)
+    {
+        map[i] = malloc(sizeof(int) * m);
+    }
+    return (map);
+}
